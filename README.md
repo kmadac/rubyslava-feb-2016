@@ -1,1 +1,1 @@
-### Rubyslava OpenSTack presentation
+### Rubyslava OpenStack presentation
