@@ -52,14 +52,13 @@
 					<h2>What is presentation about</h2>
 					<ul>
 						<li>Why OpenStack, and what we try to solve -> TestLab 1.0</li>
-					    <li>Robustly upgradable HA OpenStack distro</li>
-                        <li>Development of own OpenStack distribution based on Docker/Kubernetes -> TestLab 2.0</li>
+					  <li>Building robustly upgradable, highly-avaliable OpenStack environment -> TestLab 2.0</li>
 					</ul>
-                    <aside class="notes">
-                        Users need to simulate/test/train different hw/software scenarios 
+          <aside class="notes">
+            Users need to simulate/test/train different hw/software scenarios
 					</aside>
 				</section>
-				
+
 <!--
 				<section>
 					<h2><font color="magenta">T-Systems</font></h2>
@@ -68,7 +67,7 @@
 						<li>Based on old IT methodologies - ITIL</li>
 						<li>Teams working in technology silos</li>
 					</ul>
-					
+
 					<p><h3>cloud principles hard to implement :-(</h3></p>
 				</section>
 -->
@@ -76,29 +75,30 @@
 				<section>
 					<h2>TestLab 1.0 - 2013</h2>
 					<ul>
+						<li>No third party tool required (controlled within a browser)</li>
 						<li>OpenStack Grizzly</li>
 						<li>KVM</li>
 						<li>Ansible deployment</li>
 						<li>Networking with Neutron(Quantum) and OpenvSwitch</li>
 						<li>VMs Recycling, Self-Register portal</li>
 					</ul>
-					<p>Many patches needed to be applied in order to have environment stable.</p>
 					<aside class="notes">
-                        We were desperate with old ESX environement with one Administrator and 300 requesting users
-						Fully automated testlab, without necessity to wait for human intervention
+            We were desperate with old ESX environement with one Administrator and 300 requesting users.
+						Fully automated testlab, without necessity to wait for human intervention.
+						Patching necessary.
 					</aside>
 				</section>
 
 				<section>
 					<h2>TestLab 1.0 - what we can do better</h2>
 					<ul>
-                        <li>Virtual development environment</li>
-                        <li>Missing real VCS and CI</li>
-                        <li>Provisioning of physical nodes</li>
+            <li>Virtual development environment</li>
+            <li>Missing real VCS and CI</li>
+            <li>Provisioning of physical nodes</li>
 						<li>Rollback during update is missing - too complicated with Ansible</li>
-						<li>Avoid deploynment from distro packages</li>
+						<li>Avoid deployment from distro packages</li>
 						<li>Linux Distribution Specific installation</li>
-                        <li>We need High-Availablilty</li>
+            <li>We need High-Availablilty</li>
 					</ul>
 				</section>
 
@@ -183,36 +183,36 @@ BOOT_TIMEOUT=6
 					</code></pre>
 				</section>
 
-                <section>
-				    <h3>Example of image of configured environment</h3>
-                    <p>TODO</p>
-                </section>
-                
+        <section>
+				    <h3>Example of image of simulated environment</h3>
+            <img class="stretch" src="images/sen-fore-sim.svg" alt="sen-foreman-environment">
+        </section>
+
 				<section>
 					<h2>Provisioning of physical nodes</h2>
 						<h3>Foreman</h3>
-                        <ul>
-                            <li>OS Agnostic</li>
-                            <li>REST API, CLI, Web UI</li>
-                            <li>Auto-discovery and Auto-provisioning available</li>
-                            <li>PXE/Preseed/Kickstart files are templates</li>
-                            <li>Very active community</li>
-                        </ul>
+                <ul>
+                    <li>OS Agnostic</li>
+                    <li>REST API, CLI, Web UI</li>
+                    <li>Auto-discovery and Auto-provisioning available</li>
+                    <li>PXE/Preseed/Kickstart files are templates</li>
+                    <li>Very active community</li>
+                </ul>
 					<aside class="notes">
 						We need End to End deployment, from physical hosts to complete OpenStack
-                        We need database which can be used for deployment
+            We need database which can be used for deployment
 					</aside>
 				</section>
-                
+
 				<section>
-                    <h3>Containerization with Docker</h3>
-                    <ul>
-                        <li>We use Docker to package and deploy services - infrastructure and OpenStack</li>
-                        <li>Comfortable and fast deployment - Dev cloud can be run and tested on dev machine within 30s</li> 
-                        <li>Complexity of deployment moved from Prod to Dev</li>
-                        <li>More robust and atomic than direct install/upgrade on servers, even if CM (Ansible in our case) is used</li>
-                        <li>Possible to deploy on micro-OS like CoreOS/Atom and manage by Kubernetes/Swarm</li>
-                    </ul>
+            <h3>Containerization with Docker</h3>
+            <ul>
+                <li>We use Docker to package and deploy services - infrastructure and OpenStack</li>
+                <li>Comfortable and fast deployment - Dev cloud can be run and tested on dev machine within 30s</li>
+                <li>Complexity of deployment moved from Prod to Dev</li>
+                <li>More robust and atomic than direct install/upgrade on servers, even if CM (Ansible in our case) is used</li>
+                <li>Possible to deploy on micro-OS like CoreOS/Atom and manage by Kubernetes/Swarm</li>
+            </ul>
 					<aside class="notes">
 						Every 3-5 years tender for new vendor of Linux Distro, so we need to be able to adapt such changes
                         Kubernetes Self-Healing and Rolling Upgrades
@@ -221,31 +221,32 @@ BOOT_TIMEOUT=6
 
 				<section>
 				    <h3>Dev to Production</h3>
-                    <p>TODO: obrazok z feasibility study kde mame nakreslene ako sa dostaneme zo sourcov z githubu az ku docker imagu a do produkcie</p>
-                </section>
+						<img class="stretch" src="images/development.svg" alt="openstack-development">
+        </section>
 
 				<section style="text-align: left;">
-				    <h3>OpenStack services from Upstream</h3>
-                    <ul>
-                        <li>Python has own package management, so why encapsulate it to another one?</li>
-                        <li>Distribution package system is limiting when we need to change distribution</li>
-                        <li>Often updates possible (every day updates/rolling updates)</li>
-                        <li>Patching much more easier</li>
-                    </ul>
-                </section>      
- 
+			    <h3>OpenStack services from Upstream</h3>
+            <ul>
+                <li>Python has own package management, so why encapsulate it to another one?</li>
+                <li>Distribution package system is limiting when it comes to distro change or updating and patching</li>
+                <li>More Often updates possible (every day updates/rolling updates)</li>
+                <li>Easier patching</li>
+            </ul>
+        </section>
+
  				<section style="text-align: left;">
-				    <h3>OpenStack services from Upstream example</h3>
+				    <h3>OpenStack services from Upstream</h3>
                     <pre><code class="hljs" data-trim contenteditable>
 git clone https://github.com/openstack/nova.git
 git checkout stable/liberty
 cd nova
+pip install -r requirements.txt
 python setup.py install
                     </code></pre>
                     <p><small>We have all executable files installed in "/usr/local/bin", and we just need prepare config files and start services.</small></p>
-                    <p><small>You can start one container per service, or use supervisord like software to start multiple services in single container.</small></p>
-                </section> 
-                
+                    <p><small>You can start one container per service, or use supervisord like software to start multiple services in a single container.</small></p>
+                </section>
+
 				<section>
 				    <h3>Issues</h3>
                     <ul>
@@ -253,7 +254,7 @@ python setup.py install
                         <li>No documentation for deployment from source</li>
                         <li>Not enough REAL IT guys - devops!</li>
                     </ul>
-                </section>                
+                </section>
 
 				<section>
 				    <h3>Future plans</h3>
@@ -264,7 +265,7 @@ python setup.py install
                         <li>Automated build of glance images</li>
                         <li>Workload migration from TestLab 1.0</li>
                     </ul>
-                </section>                
+                </section>
 
 				<section style="text-align: left;">
 					<h1>THE END</h1>
