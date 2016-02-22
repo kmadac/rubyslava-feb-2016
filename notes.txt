@@ -1,0 +1,6 @@
+Pridat 2 svg obrazky o vyslednej strukture celeho OpenStacku
+Ovela jednoduchsia sa upgraduje po malych korokoch ako po pol rocnych cykloch
+Pridat slide o servisoch ktore implemetujeme - https://www.openstack.org/software/project-navigator/ a zmienit a Dospelosti projektov (maturity)
+Prodat slide o tom ako prebieha vyvoj openstack sluzieb
+Spomenut, ze OpenStack nieje Aplikacia, ale skor Framework, ktory sluzi na postavenie cloudu podla potrieb
+Pridat ciel: Implementacia dalsich sluzieb - Heat (Openstack Orchestration), Manilla(Shared Storage), Magnum(Kubernetes/Swarm as a service), Murano (App catalog)...
