@@ -49,7 +49,7 @@
 				</section>
 
 				<section>
-					<h2>What is presentation about</h2>
+					<h3>Main topics</h3>
 					<ul>
 						<li>Why OpenStack, and what we try to solve -> TestLab 1.0</li>
 					  <li>Building robustly upgradable, highly-avaliable OpenStack environment -> TestLab 2.0</li>
@@ -59,29 +59,49 @@
 					</aside>
 				</section>
 
-<!--
+
 				<section>
-					<h2><font color="magenta">T-Systems</font></h2>
+					<h3><font color="magenta">T-Systems</font></h3>
 					<ul>
 						<li>More than 3500 employes in Kosice</li>
-						<li>Based on old IT methodologies - ITIL</li>
+						<li>IT Operation is based on ITIL methodologies</li>
 						<li>Teams working in technology silos</li>
+						<li>Hardware diversity</li>
 					</ul>
-
-					<p><h3>cloud principles hard to implement :-(</h3></p>
 				</section>
--->
 
 				<section>
-					<h2>TestLab 1.0 - 2013</h2>
-					<ul>
-						<li>No third party tool required (controlled within a browser)</li>
-						<li>OpenStack Grizzly</li>
-						<li>KVM</li>
-						<li>Ansible deployment</li>
-						<li>Networking with Neutron(Quantum) and OpenvSwitch</li>
-						<li>VMs Recycling, Self-Register portal</li>
-					</ul>
+					<section>
+						<h3>What is OpenStack</h3>
+						<ul>
+							<li>Application/Framework for building and operating IaaS/PaaS cloud</li>
+						</ul>
+						<img class="stretch" src="images/core-services.png" alt="core-services">
+						<small><a href="https://www.openstack.org/software/project-navigator/">https://www.openstack.org/software/project-navigator/</a></small>
+					</section>
+					<section>
+						<ul>
+							<li>Non core services</li>
+						</ul>
+						<img class="stretch" src="images/non-core-services.png" alt="core-services">
+					</section>
+				</section>
+
+				<section>
+					<section>
+						<h3>TestLab 1.0 - 2013</h3>
+						<ul>
+							<li>No third party tool required (controlled within a browser)</li>
+							<li>OpenStack Grizzly</li>
+							<li>KVM</li>
+							<li>Ansible deployment</li>
+							<li>Multitenant - Networking with Neutron(Quantum), OpenvSwitch</li>
+							<li>VMs Recycling, Self-Register portal</li>
+						</ul>
+					</section>
+					<section>
+            <section><img class="stretch" src="images/infrastructure_overview_testlab1.png" alt="core-services"></section>
+        	</section>
 					<aside class="notes">
             We were desperate with old ESX environement with one Administrator and 300 requesting users.
 						Fully automated testlab, without necessity to wait for human intervention.
@@ -90,31 +110,42 @@
 				</section>
 
 				<section>
-					<h2>TestLab 1.0 - what we can do better</h2>
+					<h3>TestLab 2.0 - we can do it better today</h3>
 					<ul>
             <li>Virtual development environment</li>
-            <li>Missing real VCS and CI</li>
+            <li>VCS(GitLab) and CI(Gitlab CI)</li>
             <li>Provisioning of physical nodes</li>
-						<li>Rollback during update is missing - too complicated with Ansible</li>
+						<li>Rollback during update - too complicated with Ansible</li>
 						<li>Avoid deployment from distro packages</li>
-						<li>Linux Distribution Specific installation</li>
+						<li>Install from sources - Do not use distribution packages</li>
             <li>We need High-Availablilty</li>
 					</ul>
 				</section>
 
-                <section>
-					<h2>SEN - simulated environment</h2>
-                    <p><small>Vagrant in Bash</small></p>
-					<ul>
-						<li>Allows to build virtual env. with rich networks (LACP/vlans)</li>
-                        <li>VMs can boot from ISO, Network, or SEN can prepare disk with clean OS</li>
-                        <li>Built on KVM and libguestfs tools</li>
-					    <li>Support of snapshots for fast rebuilt</li>
-                    </ul>
+				<section>
+						<h3>Services needed for OpenStack</h3>
+						<img class="stretch" src="images/infrastructure-services-dependency.svg" alt="core-services" style="background: rgba(255, 255, 255, 1);">
 				</section>
 
 				<section>
-					<h2>Example of SEN config</h2>
+						<h3>OpenStack services</h3>
+						<img class="stretch" src="images/openstack-services.svg" alt="core-services" style="background: rgba(255, 255, 255, 1);">
+				</section>
+
+        <section>
+					<h3>SEN - simulated environment</h3>
+          <p><small>Vagrant in Bash</small></p>
+					<ul>
+						<li>Allows to build virtual env. with rich networks (LACP/vlans)</li>
+            <li>VMs can boot from ISO, PXE. SEN can prepare disk with clean OS too</li>
+						<li>Support of snapshots for fast rebuilt</li>
+            <li>Built on KVM and libguestfs tools</li>
+						<li>Easy installable and scriptable (used in CI)</li>
+					</ul>
+				</section>
+
+				<section>
+					<h3>Example of SEN config</h3>
 					<pre><code class="hljs" data-trim contenteditable>
 LIBVIRT_IMAGES_DIR=/opt/sen-imgs
 TMP=/tmp
@@ -189,14 +220,15 @@ BOOT_TIMEOUT=6
         </section>
 
 				<section>
-					<h2>Provisioning of physical nodes</h2>
-						<h3>Foreman</h3>
+					<h3>Provisioning of physical nodes</h3>
+						<h3><a href="http://theforeman.org/">Foreman</a></h3>
                 <ul>
                     <li>OS Agnostic</li>
                     <li>REST API, CLI, Web UI</li>
                     <li>Auto-discovery and Auto-provisioning available</li>
                     <li>PXE/Preseed/Kickstart files are templates</li>
                     <li>Very active community</li>
+										<li>Main database for Configuration Management (Ansible)</li>
                 </ul>
 					<aside class="notes">
 						We need End to End deployment, from physical hosts to complete OpenStack
@@ -205,7 +237,17 @@ BOOT_TIMEOUT=6
 				</section>
 
 				<section>
-            <h3>Containerization with Docker</h3>
+				    <h3>OpenStack development model</h3>
+						<ul>
+                <li>Many services, each with its own development team</li>
+								<li>Very agile, fast paced development. New commits, change-sets every day</li>
+								<li>Release cycle every 6 months, but it's not mandatory for projects to follow this cycle model</li>
+								<li>Every service is a python Application installable by simple "python setup.py install" command</li>
+        </section>
+
+
+				<section>
+            <h3>Containerization</h3>
             <ul>
                 <li>We use Docker to package and deploy services - infrastructure and OpenStack</li>
                 <li>Comfortable and fast deployment - Dev cloud can be run and tested on dev machine within 30s</li>
@@ -215,7 +257,7 @@ BOOT_TIMEOUT=6
             </ul>
 					<aside class="notes">
 						Every 3-5 years tender for new vendor of Linux Distro, so we need to be able to adapt such changes
-                        Kubernetes Self-Healing and Rolling Upgrades
+            Kubernetes Self-Healing and Rolling Upgrades
 					</aside>
 				</section>
 
@@ -244,35 +286,31 @@ pip install -r requirements.txt
 python setup.py install
                     </code></pre>
                     <p><small>We have all executable files installed in "/usr/local/bin", and we just need prepare config files and start services.</small></p>
-                    <p><small>You can start one container per service, or use supervisord like software to start multiple services in a single container.</small></p>
+                    <p><small>You can start one container per service, or use <a href="http://supervisord.org/">supervisord</a> like software to start multiple services in a single container.</small></p>
                 </section>
 
 				<section>
 				    <h3>Issues</h3>
-                    <ul>
-                        <li>Docker registry not mature enough yet</li>
-                        <li>No documentation for deployment from source</li>
-                        <li>Not enough REAL IT guys - devops!</li>
-                    </ul>
-                </section>
+            <ul>
+                <li>Docker registry not mature enough yet</li>
+                <li>No documentation for deployment from source</li>
+                <li>Not enough REAL IT guys - devops!</li>
+            </ul>
+        </section>
 
 				<section>
 				    <h3>Future plans</h3>
-                    <ul>
-                        <li>Glue everything together - Ansible or even Kubernetes</li>
-                        <li>Rolling updates - Change-set by Change-set</li>
-                        <li>Integration testing with Rally/Tempest</li>
-                        <li>Automated build of glance images</li>
-                        <li>Workload migration from TestLab 1.0</li>
-                    </ul>
-                </section>
+            <ul>
+                <li>Glue everything together - Ansible or even Kubernetes</li>
+                <li>Rolling updates - Change-set by Change-set</li>
+                <li>Integration testing with Rally/Tempest</li>
+                <li>Automated build of Glance images</li>
+								<li>Implementation of non-core services - Heat, Manilla, Magnum, Murano</li>
+            </ul>
+        </section>
 
 				<section style="text-align: left;">
-					<h1>THE END</h1>
-					<p>
-						- <a href="http://slides.com">Try the online editor</a> <br>
-						- <a href="https://github.com/hakimel/reveal.js">Source code &amp; documentation</a>
-					</p>
+					<h1>Thank you</h1>
 				</section>
 
 			</div>
