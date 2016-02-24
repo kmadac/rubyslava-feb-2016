@@ -64,7 +64,6 @@
 					<h3><font color="magenta">T-Systems</font></h3>
 					<ul>
 						<li>More than 3500 employes in Kosice</li>
-						<li>IT Operation is based on ITIL methodologies</li>
 						<li>Teams working in technology silos</li>
 						<li>Hardware diversity</li>
 					</ul>
@@ -89,12 +88,12 @@
 
 				<section>
 					<section>
-						<h3>TestLab 1.0 - 2013</h3>
+						<h3>TestLab 1.0 - Features</h3>
 						<ul>
 							<li>No third party tool required (controlled within a browser)</li>
 							<li>OpenStack Grizzly</li>
 							<li>KVM</li>
-							<li>Ansible deployment</li>
+							<li>Ansible used for deployment</li>
 							<li>Multitenant - Networking with Neutron(Quantum), OpenvSwitch</li>
 							<li>VMs Recycling, Self-Register portal</li>
 						</ul>
@@ -105,7 +104,7 @@
 					<aside class="notes">
             We were desperate with old ESX environement with one Administrator and 300 requesting users.
 						Fully automated testlab, without necessity to wait for human intervention.
-						Patching necessary.
+						Patching of quantum(neutron) was necessary.
 					</aside>
 				</section>
 
@@ -116,20 +115,9 @@
             <li>VCS(GitLab) and CI(Gitlab CI)</li>
             <li>Provisioning of physical nodes</li>
 						<li>Rollback during update - too complicated with Ansible</li>
-						<li>Avoid deployment from distro packages</li>
 						<li>Install from sources - Do not use distribution packages</li>
             <li>We need High-Availablilty</li>
 					</ul>
-				</section>
-
-				<section>
-						<h3>Services needed for OpenStack</h3>
-						<img class="stretch" src="images/infrastructure-services-dependency.svg" alt="core-services" style="background: rgba(255, 255, 255, 1);">
-				</section>
-
-				<section>
-						<h3>OpenStack services</h3>
-						<img class="stretch" src="images/openstack-services.svg" alt="core-services" style="background: rgba(255, 255, 255, 1);">
 				</section>
 
         <section>
@@ -236,15 +224,24 @@ BOOT_TIMEOUT=6
 					</aside>
 				</section>
 
-				<section>
+				<!-- <section>
 				    <h3>OpenStack development model</h3>
 						<ul>
                 <li>Many services, each with its own development team</li>
 								<li>Very agile, fast paced development. New commits, change-sets every day</li>
 								<li>Release cycle every 6 months, but it's not mandatory for projects to follow this cycle model</li>
 								<li>Every service is a python Application installable by simple "python setup.py install" command</li>
-        </section>
+        </section> -->
 
+				<section>
+						<h3>Services needed for OpenStack</h3>
+						<img class="stretch" src="images/infrastructure-services-dependency.svg" alt="core-services" style="background: rgba(255, 255, 255, 1);">
+				</section>
+
+				<section>
+						<h3>OpenStack services</h3>
+						<img class="stretch" src="images/openstack-services.svg" alt="core-services" style="background: rgba(255, 255, 255, 1);">
+				</section>
 
 				<section>
             <h3>Containerization</h3>
