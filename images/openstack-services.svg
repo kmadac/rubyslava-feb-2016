@@ -186,8 +186,8 @@
      </g>
      <g class="com.sun.star.drawing.ConnectorShape">
       <g id="id8">
-       <path fill="none" stroke="rgb(0,0,0)" d="M 7985,8366 C 7985,5849 13663,7449 14269,5223"/>
-       <path fill="rgb(0,0,0)" stroke="none" d="M 14321,4810 L 14113,5236 14410,5276 14321,4810 Z"/>
+       <path fill="none" stroke="rgb(0,0,0)" d="M 7985,8366 C 7985,5053 13418,6595 14222,5200"/>
+       <path fill="rgb(0,0,0)" stroke="none" d="M 14321,4810 L 14060,5206 14349,5283 14321,4810 Z"/>
       </g>
      </g>
      <g class="com.sun.star.drawing.RectangleShape">

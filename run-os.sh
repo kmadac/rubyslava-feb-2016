@@ -4,30 +4,31 @@
 
 GIT_REPO=172.27.10.10
 RELEASE_REPO=172.27.9.130
+export MYSQL_PWD=veryS3cr3t
 
 create_keystone_db() {
-    MYSQL_CMD="mysql -h 127.0.0.1 -P 3306 -u root -pveryS3cr3t"
+    MYSQL_CMD="mysql -h 127.0.0.1 -P 3306 -u root"
     $MYSQL_CMD -e "CREATE DATABASE keystone;"
     $MYSQL_CMD -e "CREATE USER 'keystone'@'%' IDENTIFIED BY 'veryS3cr3t';"
     $MYSQL_CMD -e "GRANT ALL PRIVILEGES ON keystone.* TO 'keystone'@'%' WITH GRANT OPTION;"
 }
 
 create_glance_db() {
-    MYSQL_CMD="mysql -h 127.0.0.1 -P 3306 -u root -pveryS3cr3t"
+    MYSQL_CMD="mysql -h 127.0.0.1 -P 3306 -u root"
     $MYSQL_CMD -e "CREATE DATABASE glance;"
     $MYSQL_CMD -e "CREATE USER 'glance'@'%' IDENTIFIED BY 'veryS3cr3t';"
     $MYSQL_CMD -e "GRANT ALL PRIVILEGES ON glance.* TO 'glance'@'%' WITH GRANT OPTION;"
 }
 
 create_nova_db() {
-    MYSQL_CMD="mysql -h 127.0.0.1 -P 3306 -u root -pveryS3cr3t"
+    MYSQL_CMD="mysql -h 127.0.0.1 -P 3306 -u root"
     $MYSQL_CMD -e "CREATE DATABASE nova;"
     $MYSQL_CMD -e "CREATE USER 'nova'@'%' IDENTIFIED BY 'veryS3cr3t';"
     $MYSQL_CMD -e "GRANT ALL PRIVILEGES ON nova.* TO 'nova'@'%' WITH GRANT OPTION;"
 }
 
 create_neutron_db() {
-    MYSQL_CMD="mysql -h 127.0.0.1 -P 3306 -u root -pveryS3cr3t"
+    MYSQL_CMD="mysql -h 127.0.0.1 -P 3306 -u root"
     $MYSQL_CMD -e "CREATE DATABASE neutron;"
     $MYSQL_CMD -e "CREATE USER 'neutron'@'%' IDENTIFIED BY 'veryS3cr3t';"
     $MYSQL_CMD -e "GRANT ALL PRIVILEGES ON neutron.* TO 'neutron'@'%' WITH GRANT OPTION;"
@@ -55,27 +56,27 @@ wait_for_port() {
 
 cleanup() {
     echo "Clean up ..."
-    docker stop galera
-    docker stop memcached
-    docker stop rabbitmq
-    docker stop keystone
-    docker stop glance
-    docker stop nova-controller
-    docker stop nova-compute
-    docker stop neutron-controller
-    docker stop neutron-compute
-    docker stop horizon
+    docker stop galera > /dev/null 2>&1
+    docker stop memcached > /dev/null 2>&1
+    docker stop rabbitmq > /dev/null 2>&1
+    docker stop keystone > /dev/null 2>&1
+    docker stop glance > /dev/null 2>&1
+    docker stop nova-controller > /dev/null 2>&1
+    docker stop nova-compute > /dev/null 2>&1
+    docker stop neutron-controller > /dev/null 2>&1
+    docker stop neutron-compute > /dev/null 2>&1
+    docker stop horizon > /dev/null 2>&1
 
-    docker rm galera
-    docker rm memcached
-    docker rm rabbitmq
-    docker rm keystone
-    docker rm glance
-    docker rm nova-controller
-    docker rm nova-compute
-    docker rm neutron-controller
-    docker rm neutron-compute
-    docker rm horizon
+    docker rm galera > /dev/null 2>&1
+    docker rm memcached > /dev/null 2>&1
+    docker rm rabbitmq > /dev/null 2>&1
+    docker rm keystone > /dev/null 2>&1
+    docker rm glance > /dev/null 2>&1
+    docker rm nova-controller > /dev/null 2>&1
+    docker rm nova-compute > /dev/null 2>&1
+    docker rm neutron-controller > /dev/null 2>&1
+    docker rm neutron-compute > /dev/null 2>&1
+    docker rm horizon > /dev/null 2>&1
 }
 
 cleanup

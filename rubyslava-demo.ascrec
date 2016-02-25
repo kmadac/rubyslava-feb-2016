@@ -1,0 +1,818 @@
+{
+  "version": 1,
+  "width": 103,
+  "height": 29,
+  "duration": 114.519015,
+  "command": "/bin/bash",
+  "title": "",
+  "env": {
+    "TERM": "xterm-256color",
+    "SHELL": "/bin/bash"
+  },
+  "stdout": [
+    [
+      0.074697,
+      "\u001b]0;root@kmadac-HP-ProBook-650-G1: /home/kmadac/Documents/openstack/rubyslava-feb-2016\u0007root@kmadac-HP-ProBook-650-G1:/home/kmadac/Documents/openstack/rubyslava-feb-2016# "
+    ],
+    [
+      2.276066,
+      "."
+    ],
+    [
+      0.064989,
+      "/"
+    ],
+    [
+      0.855174,
+      "r"
+    ],
+    [
+      0.095171,
+      "u"
+    ],
+    [
+      0.031914,
+      "n"
+    ],
+    [
+      0.103899,
+      "-os.sh "
+    ],
+    [
+      1.266316,
+      "\r\n"
+    ],
+    [
+      0.006054,
+      "Clean up ...\r\n"
+    ],
+    [
+      0.050981,
+      "Error response from daemon: no such id: galera\r\n"
+    ],
+    [
+      0.000020,
+      "Error: failed to stop containers: [galera]\r\n"
+    ],
+    [
+      0.032884,
+      "Error response from daemon: no such id: memcached\r\nError: failed to stop containers: [memcached]\r\n"
+    ],
+    [
+      0.025038,
+      "Error response from daemon: no such id: rabbitmq\r\nError: failed to stop containers: [rabbitmq]\r\n"
+    ],
+    [
+      0.024744,
+      "Error response from daemon: no such id: keystone"
+    ],
+    [
+      0.000060,
+      "\r\n"
+    ],
+    [
+      0.000025,
+      "Error: failed to stop containers: [keystone]\r\n"
+    ],
+    [
+      0.025126,
+      "Error response from daemon: no such id: glance\r\n"
+    ],
+    [
+      0.000010,
+      "Error: failed to stop containers: [glance]\r\n"
+    ],
+    [
+      0.025479,
+      "Error response from daemon: no such id: nova-controller\r\n"
+    ],
+    [
+      0.000029,
+      "Error: failed to stop containers: [nova-controller]\r\n"
+    ],
+    [
+      0.023483,
+      "Error response from daemon: no such id: nova-compute\r\n"
+    ],
+    [
+      0.000007,
+      "Error: failed to stop containers: [nova-compute]\r\n"
+    ],
+    [
+      0.025090,
+      "Error response from daemon: no such id: neutron-controller\r\n"
+    ],
+    [
+      0.000026,
+      "Error: failed to stop containers: [neutron-controller]"
+    ],
+    [
+      0.000010,
+      "\r\n"
+    ],
+    [
+      0.025684,
+      "Error response from daemon: no such id: neutron-compute\r\n"
+    ],
+    [
+      0.000007,
+      "Error: failed to stop containers: [neutron-compute]\r\n"
+    ],
+    [
+      0.025126,
+      "Error response from daemon: no such id: horizon\r\n"
+    ],
+    [
+      0.000007,
+      "Error: failed to stop containers: [horizon]\r\n"
+    ],
+    [
+      0.024772,
+      "Error response from daemon: no such id: galera"
+    ],
+    [
+      0.000014,
+      "\r\nError: failed to remove containers: [galera]\r\n"
+    ],
+    [
+      0.024076,
+      "Error response from daemon: no such id: memcached\r\n"
+    ],
+    [
+      0.000005,
+      "Error: failed to remove containers: [memcached]\r\n"
+    ],
+    [
+      0.025055,
+      "Error response from daemon: no such id: rabbitmq\r\n"
+    ],
+    [
+      0.000020,
+      "Error: failed to remove containers: [rabbitmq]"
+    ],
+    [
+      0.000008,
+      "\r\n"
+    ],
+    [
+      0.026378,
+      "Error response from daemon: no such id: keystone\r\n"
+    ],
+    [
+      0.000010,
+      "Error: failed to remove containers: [keystone]\r\n"
+    ],
+    [
+      0.024009,
+      "Error response from daemon: no such id: glance\r\n"
+    ],
+    [
+      0.000005,
+      "Error: failed to remove containers: [glance]\r\n"
+    ],
+    [
+      0.024282,
+      "Error response from daemon: no such id: nova-controller\r\nError: failed to remove containers: [nova-controller]\r\n"
+    ],
+    [
+      0.024856,
+      "Error response from daemon: no such id: nova-compute\r\nError: failed to remove containers: [nova-compute]\r\n"
+    ],
+    [
+      0.025065,
+      "Error response from daemon: no such id: neutron-controller\r\nError: failed to remove containers: [neutron-controller]\r\n"
+    ],
+    [
+      0.025277,
+      "Error response from daemon: no such id: neutron-compute\r\nError: failed to remove containers: [neutron-compute]\r\n"
+    ],
+    [
+      0.023902,
+      "Error response from daemon: no such id: horizon\r\nError: failed to remove containers: [horizon]\r\n"
+    ],
+    [
+      0.000697,
+      "Starting galera container ...\r\n"
+    ],
+    [
+      0.556231,
+      "9bfd58909d64b20e135fc4ddb1e0ce12d65ee992ec6fdc5fe9f141ee7adf2146\r\n"
+    ],
+    [
+      0.105809,
+      "Wait till galera is running .\r\n"
+    ],
+    [
+      0.000086,
+      "Wait till app is bound to port 3306 \r\n"
+    ],
+    [
+      0.017067,
+      ". "
+    ],
+    [
+      1.002206,
+      ". "
+    ],
+    [
+      1.004324,
+      ". "
+    ],
+    [
+      1.002734,
+      ". "
+    ],
+    [
+      1.002771,
+      ". "
+    ],
+    [
+      1.002821,
+      ". "
+    ],
+    [
+      1.002717,
+      ". "
+    ],
+    [
+      1.005572,
+      ". "
+    ],
+    [
+      1.003013,
+      "Starting Memcached node (tokens caching) ...\r\n"
+    ],
+    [
+      0.184993,
+      "11418d2c3d7fbf333b6d27bb4ec748277c2bffc90f898f32abe1e0e4c7bfe455\r\n"
+    ],
+    [
+      0.072580,
+      "Starting RabbitMQ container ...\r\n"
+    ],
+    [
+      0.094932,
+      "42fbadf8b6c5ef29ead6ecd9b768be1d7761fe801810f10163aee24f30d94e0f\r\n"
+    ],
+    [
+      10.078761,
+      "Warning: Using a password on the command line interface can be insecure.\r\n"
+    ],
+    [
+      0.005099,
+      "Warning: Using a password on the command line interface can be insecure.\r\n"
+    ],
+    [
+      0.004741,
+      "Warning: Using a password on the command line interface can be insecure.\r\n"
+    ],
+    [
+      0.004997,
+      "Warning: Using a password on the command line interface can be insecure.\r\n"
+    ],
+    [
+      0.004338,
+      "Warning: Using a password on the command line interface can be insecure.\r\n"
+    ],
+    [
+      0.004329,
+      "Warning: Using a password on the command line interface can be insecure.\r\n"
+    ],
+    [
+      0.004539,
+      "Warning: Using a password on the command line interface can be insecure.\r\n"
+    ],
+    [
+      0.005088,
+      "Warning: Using a password on the command line interface can be insecure.\r\n"
+    ],
+    [
+      0.004709,
+      "Warning: Using a password on the command line interface can be insecure.\r\n"
+    ],
+    [
+      0.004665,
+      "Warning: Using a password on the command line interface can be insecure.\r\n"
+    ],
+    [
+      0.004475,
+      "Warning: Using a password on the command line interface can be insecure.\r\n"
+    ],
+    [
+      0.004505,
+      "Warning: Using a password on the command line interface can be insecure.\r\n"
+    ],
+    [
+      0.006067,
+      "Starting keystone container\r\n"
+    ],
+    [
+      0.160778,
+      "c8c833278738a80402db465edbe03976c685c3d7521ea7312c9f12a1467aa20d\r\n"
+    ],
+    [
+      0.062609,
+      "Wait till keystone is running .\r\n"
+    ],
+    [
+      0.000047,
+      "Wait till app is bound to port 5000 \r\n"
+    ],
+    [
+      0.002035,
+      ". "
+    ],
+    [
+      1.002884,
+      ". "
+    ],
+    [
+      1.002956,
+      ". "
+    ],
+    [
+      1.002718,
+      ". "
+    ],
+    [
+      1.002919,
+      ". "
+    ],
+    [
+      1.005428,
+      ". "
+    ],
+    [
+      1.004190,
+      "Wait till app is bound to port 35357 \r\n"
+    ],
+    [
+      0.002823,
+      "Starting glance container"
+    ],
+    [
+      0.000007,
+      "\r\n"
+    ],
+    [
+      0.198319,
+      "37eeea7416b0de5dc5c447b2d881d97a352e90638826f81a7ae8cced3678b218\r\n"
+    ],
+    [
+      0.079321,
+      "Starting nova-controller container\r\n"
+    ],
+    [
+      0.154376,
+      "f713599fc1b3bb4964baebb0a89e5440ead0b30cf56a32144636c7e8c2490370\r\n"
+    ],
+    [
+      0.131352,
+      "Wait till app is bound to port 8774 \r\n"
+    ],
+    [
+      0.002536,
+      ". "
+    ],
+    [
+      1.003569,
+      ". "
+    ],
+    [
+      1.002941,
+      ". "
+    ],
+    [
+      1.002320,
+      ". "
+    ],
+    [
+      1.002982,
+      ". "
+    ],
+    [
+      1.002257,
+      ". "
+    ],
+    [
+      1.002997,
+      ". "
+    ],
+    [
+      1.003133,
+      ". "
+    ],
+    [
+      1.002991,
+      ". "
+    ],
+    [
+      1.004467,
+      ". "
+    ],
+    [
+      1.003022,
+      ". "
+    ],
+    [
+      1.003221,
+      ". "
+    ],
+    [
+      1.002741,
+      ". "
+    ],
+    [
+      1.002699,
+      ". "
+    ],
+    [
+      1.003038,
+      ". "
+    ],
+    [
+      1.002986,
+      ". "
+    ],
+    [
+      1.002943,
+      ". "
+    ],
+    [
+      1.003642,
+      ". "
+    ],
+    [
+      1.003679,
+      ". "
+    ],
+    [
+      1.003790,
+      ". "
+    ],
+    [
+      1.004780,
+      ". "
+    ],
+    [
+      1.003005,
+      "Wait till app is bound to port 8775 \r\n"
+    ],
+    [
+      0.001553,
+      ". "
+    ],
+    [
+      1.002832,
+      "Wait till app is bound to port 6082 \r\n"
+    ],
+    [
+      0.001342,
+      "Starting nova-compute container\r\n"
+    ],
+    [
+      0.151623,
+      "d0a5579c467ddd3bde88ec88523a310c91549049eb4e96364c8b02f80ccc6d7d\r\n"
+    ],
+    [
+      0.058452,
+      "Starting neutron-controller container\r\n"
+    ],
+    [
+      0.120071,
+      "a306829ef7fa6a77cd711464bb4992468f0f375def0cc157645ce60054175356\r\n"
+    ],
+    [
+      0.084310,
+      "Wait till app is bound to port 9696 \r\n"
+    ],
+    [
+      0.002089,
+      ". "
+    ],
+    [
+      1.002823,
+      ". "
+    ],
+    [
+      1.002548,
+      ". "
+    ],
+    [
+      1.002657,
+      ". "
+    ],
+    [
+      1.002872,
+      ". "
+    ],
+    [
+      1.003178,
+      ". "
+    ],
+    [
+      1.002388,
+      ". "
+    ],
+    [
+      1.002411,
+      ". "
+    ],
+    [
+      1.002937,
+      ". "
+    ],
+    [
+      1.007933,
+      ". "
+    ],
+    [
+      1.004535,
+      ". "
+    ],
+    [
+      1.004336,
+      "Starting neutron-compute container"
+    ],
+    [
+      0.000028,
+      "\r\n"
+    ],
+    [
+      0.226994,
+      "8b0dabd6d32c3212c306056359849829dbd0110dc54dcc23dfa96ce013dd872d\r\n"
+    ],
+    [
+      0.111117,
+      "Starting horizon container\r\n"
+    ],
+    [
+      0.159244,
+      "6c4736c35d324f0f7c7cca070921ca3f0c1982313415d5659a851a15f96c7b47\r\n"
+    ],
+    [
+      0.098663,
+      "Wait till app is bound to port 9191 \r\n"
+    ],
+    [
+      0.002843,
+      "Wait till app is bound to port 9292 \r\n"
+    ],
+    [
+      0.284959,
+      "OSadmin start script: generating adminrc file ...\r\n"
+    ],
+    [
+      0.013584,
+      "OSadmin start script:  ==\u003e done\r\n"
+    ],
+    [
+      0.000052,
+      "OSadmin start script: generating userrc file ...\r\n"
+    ],
+    [
+      0.011052,
+      "OSadmin start script:  ==\u003e done\r\n"
+    ],
+    [
+      1.066680,
+      "+-------------+----------------------------------+\r\n| Field       | Value                            |\r\n+-------------+----------------------------------+\r\n| description | OpenStack Identity               |\r\n| enabled     | True                             |\r\n| id          | 0d0f9c218f824cef8078969ab2d161e6 |\r\n| name        | keystone                         |\r\n| type        | identity                         |\r\n+-------------+----------------------------------+\r\n"
+    ],
+    [
+      0.744130,
+      "+--------------+----------------------------------+\r\n| Field        | Value                            |\r\n+--------------+----------------------------------+\r\n| enabled      | True                             |\r\n| id           | 697f638f0c5e41cdadf00267a8f11c58 |\r\n| interface    | public                           |\r\n| region       | RegionOne                        |\r\n| region_id    | RegionOne                        |\r\n| service_id   | 0d0f9c218f824cef8078969ab2d161e6 |\r\n| service_name | keystone                         |\r\n| service_type | identity                         |\r\n| url          | http://127.0.0.1:5000/v3         |\r\n+--------------+----------------------------------+\r\n"
+    ],
+    [
+      0.404585,
+      "+--------------+----------------------------------+\r\n| Field        | Value                            |\r\n+--------------+----------------------------------+\r\n| enabled      | True                             |\r\n| id           | 09413a14fe024c219965f787e747fbd1 |\r\n| interface    | internal                         |\r\n| region       | RegionOne                        |\r\n| region_id    | RegionOne                        |\r\n| service_id   | 0d0f9c218f824cef8078969ab2d161e6 |\r\n| service_name | keystone                         |\r\n| service_type | identity                         |\r\n| url          | http://127.0.0.1:5000/v3         |\r\n+--------------+----------------------------------+\r\n"
+    ],
+    [
+      0.755940,
+      "+--------------+----------------------------------+\r\n| Field        | Value                            |\r\n+--------------+----------------------------------+\r\n| enabled      | True                             |\r\n| id           | b2fba926de9a40369714aa735ddaaa7a |\r\n| interface    | admin                            |\r\n| region       | RegionOne                        |\r\n| region_id    | RegionOne                        |\r\n| service_id   | 0d0f9c218f824cef8078969ab2d161e6 |\r\n| service_name | keystone                         |\r\n| service_type | identity                         |\r\n| url          | http://127.0.0.1:35357/v3        |\r\n+--------------+----------------------------------+\r\n"
+    ],
+    [
+      0.300128,
+      "+-------------+----------------------------------+\r\n| Field       | Value                            |\r\n+-------------+----------------------------------+\r\n| description | Admin Project                    |\r\n| domain_id   | default                          |\r\n| enabled     | True                             |\r\n| id          | a5f011cac3c14430bab494b2f3c44bce |\r\n| is_domain   | False                            |\r\n| name        | admin                            |\r\n| parent_id   | None                             |\r\n+-------------+----------------------------------+\r\n"
+    ],
+    [
+      0.297437,
+      "+-----------+----------------------------------+\r\n| Field     | Value                            |\r\n+-----------+----------------------------------+\r\n| domain_id | default                          |\r\n| enabled   | True                             |\r\n| id        | 944ba1b0cf96421ebfe7009d334fbbd5 |\r\n| name      | admin                            |\r\n+-----------+----------------------------------+\r\n"
+    ],
+    [
+      0.236992,
+      "+-------+----------------------------------+\r\n| Field | Value                            |\r\n+-------+----------------------------------+\r\n| id    | da72f7a0c24f4a4b953906b050a9c31f |\r\n| name  | admin                            |\r\n+-------+----------------------------------+\r\n"
+    ],
+    [
+      1.105422,
+      "+-------------+----------------------------------+\r\n| Field       | Value                            |\r\n+-------------+----------------------------------+\r\n| description | Service Project                  |\r\n| domain_id   | default                          |\r\n| enabled     | True                             |\r\n| id          | 3058e210d9c54c95bfde52082f7f89bb |\r\n| is_domain   | False                            |\r\n| name        | service                          |\r\n| parent_id   | None                             |\r\n+-------------+----------------------------------+\r\n"
+    ],
+    [
+      0.319520,
+      "+-------------+----------------------------------+\r\n| Field       | Value                            |\r\n+-------------+----------------------------------+\r\n| description | Demo Project                     |\r\n| domain_id   | default                          |\r\n| enabled     | True                             |\r\n| id          | 964d6828f9264bd2abe5e0b0bbe9dd7d |\r\n| is_domain   | False                            |\r\n| name        | demo                             |\r\n| parent_id   | None                             |\r\n+-------------+----------------------------------+\r\n"
+    ],
+    [
+      0.498245,
+      "+-----------+----------------------------------+\r\n| Field     | Value                            |\r\n+-----------+----------------------------------+\r\n| domain_id | default                          |\r\n| enabled   | True                             |\r\n| id        | 4fa0d727782d4f5eab20b0495b619f49 |\r\n| name      | demo                             |\r\n+-----------+----------------------------------+\r\n"
+    ],
+    [
+      0.300558,
+      "+-------+----------------------------------+"
+    ],
+    [
+      0.000022,
+      "\r\n"
+    ],
+    [
+      0.000011,
+      "| Field | Value                            |"
+    ],
+    [
+      0.000042,
+      "\r\n+-------+----------------------------------+"
+    ],
+    [
+      0.000043,
+      "\r\n| id    | 3f85a41cb3654c3d9a7c064ea50795e7 |\r\n| name  | user                             |\r\n"
+    ],
+    [
+      0.000008,
+      "+-------+----------------------------------+\r\n"
+    ],
+    [
+      0.904763,
+      "+-----------+----------------------------------+\r\n| Field     | Value                            |\r\n+-----------+----------------------------------+\r\n| domain_id | default                          |\r\n| enabled   | True                             |\r\n| id        | 43b4a0b9cb844f82849adc42b3896aae |\r\n| name      | glance                           |\r\n+-----------+----------------------------------+\r\n"
+    ],
+    [
+      0.522412,
+      "+-------------+----------------------------------+\r\n| Field       | Value                            |\r\n+-------------+----------------------------------+\r\n| description | OpenStack Image service          |\r\n| enabled     | True                             |\r\n| id          | 4048f08174704d1c8ea56ac13b7daf65 |\r\n| name        | glance                           |\r\n| type        | image                            |\r\n+-------------+----------------------------------+\r\n"
+    ],
+    [
+      0.264548,
+      "+--------------+----------------------------------+\r\n| Field        | Value                            |\r\n+--------------+----------------------------------+\r\n| enabled      | True                             |\r\n| id           | b177f746cf1c4690b65fce6cc4bb21f7 |\r\n| interface    | public                           |\r\n| region       | RegionOne                        |\r\n| region_id    | RegionOne                        |\r\n| service_id   | 4048f08174704d1c8ea56ac13b7daf65 |\r\n| service_name | glance                           |\r\n| service_type | image                            |\r\n| url          | http://127.0.0.1:9292            |\r\n+--------------+----------------------------------+\r\n"
+    ],
+    [
+      0.316716,
+      "+--------------+----------------------------------+\r\n| Field        | Value                            |\r\n+--------------+----------------------------------+\r\n| enabled      | True                             |\r\n| id           | 08c54783a1b242158f2c434ab3a9930c |\r\n| interface    | internal                         |\r\n| region       | RegionOne                        |\r\n| region_id    | RegionOne                        |\r\n| service_id   | 4048f08174704d1c8ea56ac13b7daf65 |\r\n| service_name | glance                           |\r\n| service_type | image                            |\r\n| url          | http://127.0.0.1:9292            |\r\n+--------------+----------------------------------+\r\n"
+    ],
+    [
+      0.258583,
+      "+--------------+----------------------------------+\r\n| Field        | Value                            |\r\n+--------------+----------------------------------+\r\n| enabled      | True                             |\r\n| id           | b863ad9bbf23419cbe20f8ed59ac483d |\r\n| interface    | admin                            |\r\n| region       | RegionOne                        |\r\n| region_id    | RegionOne                        |\r\n| service_id   | 4048f08174704d1c8ea56ac13b7daf65 |\r\n| service_name | glance                           |\r\n| service_type | image                            |\r\n| url          | http://127.0.0.1:9292            |\r\n+--------------+----------------------------------+\r\n"
+    ],
+    [
+      0.310300,
+      "+-----------+----------------------------------+\r\n| Field     | Value                            |\r\n+-----------+----------------------------------+\r\n| domain_id | default                          |\r\n| enabled   | True                             |\r\n| id        | d8948b425c9d4e55a2b9f67611e82277 |\r\n| name      | nova                             |\r\n+-----------+----------------------------------+\r\n"
+    ],
+    [
+      0.652698,
+      "+-------------+----------------------------------+\r\n| Field       | Value                            |\r\n+-------------+----------------------------------+\r\n| description | OpenStack Compute service        |\r\n| enabled     | True                             |\r\n| id          | e320db2d14674101964df954366c2f4e |\r\n| name        | nova                             |\r\n| type        | compute                          |\r\n+-------------+----------------------------------+\r\n"
+    ],
+    [
+      0.249233,
+      "+--------------+----------------------------------------+\r\n| Field        | Value                                  |\r\n+--------------+----------------------------------------+\r\n| enabled      | True                                   |\r\n| id           | c743d3babe2a40fca377d3d004f3b2f8       |\r\n| interface    | public                                 |\r\n| region       | RegionOne                              |\r\n| region_id    | RegionOne                              |\r\n| service_id   | e320db2d14674101964df954366c2f4e       |\r\n| service_name | nova                                   |\r\n| service_type | compute                                |\r\n| url          | http://127.0.0.1:8774/v2/%(tenant_id)s |\r\n+--------------+----------------------------------------+\r\n"
+    ],
+    [
+      0.257768,
+      "+--------------+----------------------------------------+\r\n| Field        | Value                                  |\r\n+--------------+----------------------------------------+\r\n| enabled      | True                                   |\r\n| id           | 538e49ca44a6450c98903c393d13b213       |\r\n| interface    | internal                               |\r\n| region       | RegionOne                              |\r\n| region_id    | RegionOne                              |\r\n| service_id   | e320db2d14674101964df954366c2f4e       |\r\n| service_name | nova                                   |\r\n| service_type | compute                                |\r\n| url          | http://127.0.0.1:8774/v2/%(tenant_id)s |\r\n+--------------+----------------------------------------+\r\n"
+    ],
+    [
+      0.293500,
+      "+--------------+----------------------------------------+\r\n| Field        | Value                                  |\r\n+--------------+----------------------------------------+\r\n| enabled      | True                                   |\r\n| id           | b7dfe22349744206a2bf3b9c6eef9348       |\r\n| interface    | admin                                  |\r\n| region       | RegionOne                              |\r\n| region_id    | RegionOne                              |\r\n| service_id   | e320db2d14674101964df954366c2f4e       |\r\n| service_name | nova                                   |\r\n| service_type | compute                                |\r\n| url          | http://127.0.0.1:8774/v2/%(tenant_id)s |\r\n+--------------+----------------------------------------+\r\n"
+    ],
+    [
+      0.256320,
+      "+-----------+----------------------------------+\r\n| Field     | Value                            |\r\n+-----------+----------------------------------+\r\n| domain_id | default                          |\r\n| enabled   | True                             |\r\n| id        | 14aa1e4b9c5d426c8c0014b66f0c47f4 |\r\n| name      | neutron                          |\r\n+-----------+----------------------------------+\r\n"
+    ],
+    [
+      0.550732,
+      "+-------------+----------------------------------+\r\n| Field       | Value                            |\r\n+-------------+----------------------------------+\r\n| description | OpenStack Networking             |\r\n| enabled     | True                             |\r\n| id          | 458bb6697f5f48ce83742cea9c456bdd |\r\n| name        | neutron                          |\r\n| type        | network                          |\r\n+-------------+----------------------------------+\r\n"
+    ],
+    [
+      0.249556,
+      "+--------------+----------------------------------+\r\n| Field        | Value                            |\r\n+--------------+----------------------------------+\r\n| enabled      | True                             |\r\n| id           | c8336ec128de4a5f9c11995ca7d81ff1 |\r\n| interface    | public                           |\r\n| region       | RegionOne                        |\r\n| region_id    | RegionOne                        |\r\n| service_id   | 458bb6697f5f48ce83742cea9c456bdd |\r\n| service_name | neutron                          |\r\n| service_type | network                          |\r\n| url          | http://127.0.0.1:9696            |\r\n+--------------+----------------------------------+\r\n"
+    ],
+    [
+      0.285661,
+      "+--------------+----------------------------------+\r\n| Field        | Value                            |\r\n+--------------+----------------------------------+\r\n| enabled      | True                             |\r\n| id           | acdf47afb6d24e708316df63c24deb02 |\r\n| interface    | internal                         |\r\n| region       | RegionOne                        |\r\n| region_id    | RegionOne                        |\r\n| service_id   | 458bb6697f5f48ce83742cea9c456bdd |\r\n| service_name | neutron                          |\r\n| service_type | network                          |\r\n| url          | http://127.0.0.1:9696            |\r\n+--------------+----------------------------------+\r\n"
+    ],
+    [
+      0.262085,
+      "+--------------+----------------------------------+\r\n| Field        | Value                            |\r\n+--------------+----------------------------------+\r\n| enabled      | True                             |\r\n| id           | 8bfee9ef91204a70831b22c1d8e99ce9 |\r\n| interface    | admin                            |\r\n| region       | RegionOne                        |\r\n| region_id    | RegionOne                        |\r\n| service_id   | 458bb6697f5f48ce83742cea9c456bdd |\r\n| service_name | neutron                          |\r\n| service_type | network                          |\r\n| url          | http://127.0.0.1:9696            |\r\n+--------------+----------------------------------+\r\n"
+    ],
+    [
+      0.374178,
+      "OSadmin start script: generating adminrc file ..."
+    ],
+    [
+      0.000007,
+      "\r\n"
+    ],
+    [
+      0.010438,
+      "OSadmin start script:  ==\u003e done\r\n"
+    ],
+    [
+      0.000025,
+      "OSadmin start script: generating userrc file ...\r\n"
+    ],
+    [
+      0.008046,
+      "OSadmin start script:  ==\u003e done\r\n"
+    ],
+    [
+      1.642411,
+      "+------------------+------------------------------------------------------+\r\n| Field            | Value                                                |\r\n+------------------+------------------------------------------------------+\r\n| checksum         | ee1eca47dc88f4879d8a229cc70a07c6                     |\r\n| container_format | bare                                                 |\r\n| created_at       | 2016-02-24T13:25:41Z                                 |\r\n| disk_format      | qcow2                                                |\r\n| file             | /v2/images/fa66a725-e6f4-4a5f-ba12-c433914ef58b/file |\r\n| id               | fa66a725-e6f4-4a5f-ba12-c433914ef58b                 |\r\n| min_disk         | 0                                                    |\r\n| min_ram          | 0                                                    |\r\n| name             | cirros                                               |\r\n| owner            | a5f011cac3c14430bab494b2f3c44bce                     |\r\n| protected        | False                                                |\r\n| schema           | /v2/schemas/image                                    |\r\n| size             | 13287936                                             |\r\n"
+    ],
+    [
+      0.000013,
+      "| status           | active                                               |\r\n| tags             |                                                      |\r\n| updated_at       | 2016-02-24T13:25:41Z                                 |\r\n| virtual_size     | None                                                 |\r\n| visibility       | public                                               |\r\n+------------------+------------------------------------------------------+\r\n"
+    ],
+    [
+      0.109062,
+      "\u001b]0;root@kmadac-HP-ProBook-650-G1: /home/kmadac/Documents/openstack/rubyslava-feb-2016\u0007root@kmadac-HP-ProBook-650-G1:/home/kmadac/Documents/openstack/rubyslava-feb-2016# "
+    ],
+    [
+      32.113916,
+      "n"
+    ],
+    [
+      0.099155,
+      "a"
+    ],
+    [
+      0.057935,
+      "n"
+    ],
+    [
+      0.037996,
+      "o"
+    ],
+    [
+      0.111407,
+      " "
+    ],
+    [
+      0.219768,
+      "\u0007"
+    ],
+    [
+      0.152879,
+      "\r\n"
+    ],
+    [
+      0.000018,
+      "bower.json       .gitignore       js/              package.json     run-os.sh        \r\nCONTRIBUTING.md  Gruntfile.js     lib/             plugin/          test/            \r\n"
+    ],
+    [
+      0.000039,
+      "css/             images/          LICENSE          README.md        .travis.yml      \r\n.git/            index.html       notes.txt        README.md.orig   \r\n"
+    ],
+    [
+      0.000019,
+      "\u001b]0;root@kmadac-HP-ProBook-650-G1: /home/kmadac/Documents/openstack/rubyslava-feb-2016\u0007root@kmadac-HP-ProBook-650-G1:/home/kmadac/Documents/openstack/rubyslava-feb-2016# nano "
+    ],
+    [
+      0.135060,
+      "\r\n"
+    ],
+    [
+      0.000005,
+      "bower.json       .gitignore       js/              package.json     run-os.sh        \r\n"
+    ],
+    [
+      0.000042,
+      "CONTRIBUTING.md  Gruntfile.js     lib/             plugin/          test/            \r\ncss/             images/          LICENSE          README.md        .travis.yml      \r\n.git/            index.html       notes.txt        README.md.orig   \r\n"
+    ],
+    [
+      0.000017,
+      "\u001b]0;root@kmadac-HP-ProBook-650-G1: /home/kmadac/Documents/openstack/rubyslava-feb-2016\u0007root@kmadac-HP-ProBook-650-G1:/home/kmadac/Documents/openstack/rubyslava-feb-2016# nano "
+    ],
+    [
+      0.708685,
+      "\u0008\u001b[K"
+    ],
+    [
+      0.160033,
+      "\u0008\u001b[K"
+    ],
+    [
+      0.152156,
+      "\u0008\u001b[K"
+    ],
+    [
+      0.143784,
+      "\u0008\u001b[K"
+    ],
+    [
+      0.143874,
+      "\u0008\u001b[K"
+    ],
+    [
+      0.143925,
+      "\u0007"
+    ],
+    [
+      0.575968,
+      "exit\r\n"
+    ]
+  ]
+}
